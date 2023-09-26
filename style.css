@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Edu+SA+Beginner&family=Lobster&family=Poppins&family=Tangerine:wght@700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+section {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body {
+  height: 100vh;
+  width: 100vw;
+  background-color: black;
+}
+.clock {
+  background-color: azure;
+  height: 60%;
+  width: 27%;
+  border-radius: 50%;
+  border: 4px ridge grey;
+  border-style: solid;
+  position: relative;
+}
+
+.name {
+  color: black;
+  position: absolute;
+  height: 25%;
+  font-size: 120%;
+  font-weight: 400;
+  font-family: "Lobster";
+}
+.midpoint {
+  position: absolute;
+  width: 2%;
+  height: 4%;
+  background-color: black;
+  border-radius: 50%;
+  z-index: 5;
+}
+.number {
+  position: absolute;
+  width: 2%;
+  height: 57%;
+  font-size: 200%;
+}
+
+.number-1 {
+  transform: rotate(30deg);
+}
+.number-2 {
+  transform: rotate(60deg);
+}
+.number-3 {
+  transform: rotate(90deg);
+}
+.number-4 {
+  transform: rotate(120deg);
+}
+.number-5 {
+  transform: rotate(150deg);
+}
+.number-6 {
+  transform: rotate(180deg);
+}
+.number-7 {
+  transform: rotate(210deg);
+}
+.number-8 {
+  transform: rotate(240deg);
+}
+.number-9 {
+  transform: rotate(270deg);
+}
+.number-10 {
+  transform: rotate(300deg);
+}
+.number-11 {
+  transform: rotate(330deg);
+}
+.number::before {
+  content: "";
+  width: 2%;
+  height: 15%;
+}
+
+.hands {
+  position: absolute;
+  width: 0.5%;
+  height: 14%;
+  bottom: 50%;
+  background-color: black;
+  border: 1px solid silver;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+  transform-origin: bottom;
+  transform: rotate(300deg);
+}
+
+.minutes {
+  position: absolute;
+  width: 0.5%;
+  height: 18%;
+  bottom: 50%;
+  background-color: black;
+  border: 1px solid silver;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+  transform-origin: bottom;
+  transform: rotate(60deg);
+}
+.seconds {
+  position: absolute;
+  width: 0.4%;
+  height: 23%;
+  bottom: 50%;
+  background-color: red;
+  border: 1px solid red;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+  transform-origin: bottom;
+  transform: rotate(90deg);
+}
